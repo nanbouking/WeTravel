@@ -1,0 +1,43 @@
+.radio-group {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 0rpx 10rpx;
+}
+
+.radio-group .item {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	line-height: 2.1;
+	min-height: 70rpx;
+	border-bottom: 1rpx solid #eee;
+	font-size: 28rpx;
+}
+
+.radio-group .item .item-label{
+	width: 100%; 
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+ 
+
+.radio-group .item:last-child {
+	border-bottom: 0;
+}
+
+.radio-group .item:nth-child(odd) {
+	background-color: #fcfcfc;
+}
+
+
+.radio-group .item .item-radio {
+	margin-right: 20rpx;
+	padding-left: 10rpx; 
+} 

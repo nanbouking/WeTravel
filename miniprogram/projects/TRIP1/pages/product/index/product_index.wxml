@@ -1,0 +1,35 @@
+<wxs module="tools"> 
+	module.exports = {
+		parseInt: parseInt,
+	}
+</wxs>
+
+<view wx:if="{{!_params}}" class="margin-top load loading text-l load-project"></view>
+<block wx:else>
+	<cmpt-comm-list type="product-list" sortMenusDefaultIndex="0" _params="{{_params}}" search="{{search}}" _menus="{{sortMenus}}" _items="{{sortItems}}" route="product/list" topBottom="120" placeholder="搜索" bind:list="bindCommListCmpt">
+
+		<view class="product-list">
+			<view class="item" wx:for="{{dataList.list}}" wx:key="key" bindtap="url" data-url="../detail/product_detail?id={{item._id}}">
+				<image mode="aspectFill" lazy-load="{{true}}" class="loading" src="{{item.PRODUCT_OBJ.cover[0]}}"> <text class="star"><text wx:key="key1" wx:for="{{tools.parseInt(item.PRODUCT_OBJ.star)}}" class="icon-favorfill" /></text></image>
+				<view class="right">
+					<view class="line1 content-cut-one">{{item.PRODUCT_TITLE}}</view>
+					<view class="line3 content-cut-two">{{item.PRODUCT_OBJ.desc}}</view>
+				</view>
+
+			</view>
+		</view>
+
+		<!--load begin-->
+		<import src="../../../../../tpls/public/list_load_tpl.wxml" />
+		<template is="listLoadTpl" data="{{skin:'load-project',dataList}}" />
+		<!--load end-->
+
+	</cmpt-comm-list>
+
+
+	<block wx:if="{{skin.IS_SUB}}">
+		<import src="../../tpls/menu_tpl.wxml" />
+		<template is="menuTpl" data="{{curMenu:'product_index',returnHome:false}}" />
+	</block>
+
+</block>
