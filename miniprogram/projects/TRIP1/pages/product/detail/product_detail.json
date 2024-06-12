@@ -1,0 +1,8 @@
+{
+	"usingComponents": { 
+		"cmpt-swiper": "/cmpts/public/swiper/swiper_cmpt",
+		"cmpt-detail": "/cmpts/biz/detail/detail_cmpt"
+	},
+	"enablePullDownRefresh": true, 
+	"navigationBarTitleText": "景点详情"
+}

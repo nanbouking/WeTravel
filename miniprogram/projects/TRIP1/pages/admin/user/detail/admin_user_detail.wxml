@@ -1,0 +1,34 @@
+<view wx:if="{{isLoad===null}}" class="margin-top load notexist text-l text-grey"></view>
+<view wx:if="{{isLoad===false}}" class="margin-top load loading text-l text-grey"></view>
+
+<view wx:if="{{isLoad && isAdmin}}" class="main-admin">
+	<view class="admin-comm-list">
+		<view class="item">
+			<view class="info">
+				<view class="info-item">
+					<view class="title">用户昵称</view>
+					<view class="mao">：</view>
+					<view class="content text-admin  text-l">{{user.USER_NAME}} </view>
+				</view>
+				<view class="info-item" bindtap="url" data-type="phone" data-url="{{user.USER_MOBILE}}">
+					<view class="title">手机号码</view>
+					<view class="mao">：</view>
+					<view class="content">{{user.USER_MOBILE}} <text class="icon-phone text-l margin-left-xs"></text></view>
+				</view>
+				<view class="info-item">
+					<view class="title">注册时间</view>
+					<view class="mao">：</view>
+					<view class="content">{{user.USER_ADD_TIME}} </view>
+				</view>
+
+				<view class="info-item" wx:key="key" wx:for="{{user.USER_FORMS}}">
+					<view class="title">{{item.title}}</view>
+					<view class="mao">：</view>
+					<view class="content">{{item.val}} </view>
+				</view>
+			</view>
+
+		</view>
+
+	</view>
+</view>

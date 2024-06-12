@@ -1,0 +1,71 @@
+@import "../../../style/skin.wxss";
+
+.main {
+	width: 100%;
+	padding: 0;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	padding: 20rpx 30rpx;
+}
+
+.header .line1 {
+	width: 100%;
+	font-weight: bold;
+	font-size: 36rpx;
+	color: #000;
+	margin-bottom: 15rpx;
+}
+
+.header .line2,
+.header .line3 {
+	width: 100%;
+	font-size: 28rpx;
+	color: #333;
+	margin-bottom: 10rpx;
+	padding: 10rpx 0rpx;
+}
+
+.header .line2 {
+	border-bottom: 1rpx solid #eee;
+}
+
+
+.content {
+	margin-top: 20rpx;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	padding: 20rpx 30rpx;
+	margin-bottom: 200rpx;
+}
+
+.content .item {
+	padding: 0rpx 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.content .item .title {
+	width: 100%;
+	font-size: 30rpx;
+	color: #000;
+	font-weight: bold;
+	border-bottom: 1rpx solid #eee;
+	padding: 20rpx 0;
+	margin-bottom: 20rpx;
+}
+
+.content .item .desc {
+	width: 100%;
+	font-size: 28rpx;
+	color: #666;
+	margin-bottom: 40rpx;
+}

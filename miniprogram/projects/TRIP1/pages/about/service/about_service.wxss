@@ -1,0 +1,114 @@
+@import "../../../style/skin.wxss";
+
+page {
+	background-color: #fff;
+}
+
+.main-service {
+	background-color: #fff;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 10rpx 0rpx 100rpx;
+}
+
+.main-service .pic {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20rpx 20rpx;
+}
+
+.main-service .pic image {
+	width: 100%;
+	height: 260rpx;
+	border-radius: 20rpx;
+}
+
+.service-title {
+	font-size: 36rpx;
+	padding: 20rpx 30rpx;
+	font-weight: bold;
+	color: #000;
+}
+
+.service-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 10rpx;
+}
+
+.service-list .item {
+	width: 50%;
+	padding: 15rpx 15rpx;
+}
+
+.service-list .item .item-inner {
+	width: 100%;
+	background-color: #06B2DE;
+	color: #fff;
+	height: 130rpx;
+	border-radius: 10rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.service-list .item .bg1 {
+	background-image: linear-gradient(45deg, #06B2DE, #01DBC6);
+}
+
+.service-list .item .item-inner .bg2 {
+	background-image: linear-gradient(45deg, #276eb0, #2B97FF);
+}
+
+.service-list .item .bg3 {
+	background-image: linear-gradient(45deg, #10CB61, #7EE263);
+}
+
+.service-list .item .bg4 {
+	background-image: linear-gradient(45deg, #FE753B, #F8BF1B);
+}
+
+.service-list .item .bg5 {
+	background-image: linear-gradient(45deg, #8467FE, #DB81F1);
+}
+
+.service-list .item .bg6 {
+	background-image: linear-gradient(45deg, #FD5589, #FC8563);
+}
+
+.service-list .item .left {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 0 10rpx 0 20rpx;
+}
+
+.service-list .item .item-inner .left .line1 {
+	font-size: 32rpx;
+}
+
+.service-list .item .item-inner .left .line2 {
+	font-size: 24rpx;
+}
+
+.service-list .item .item-inner .right {
+	font-size: 50rpx;
+	width: 80rpx;
+	height: 80rpx;
+	background-color: rgba(255, 255, 255, .2);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20rpx;
+}
+
+.service-list .item .item-inner .right image {
+	width: 50rpx;
+	height: 50rpx;
+}
